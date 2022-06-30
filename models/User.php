@@ -4,7 +4,6 @@ namespace Models;
 
 use Logs\LogsControl;
 use Validation\Validation;
-use function Controllers\setcookie;
 
 class User extends CustomerController implements UserInterface
 {
