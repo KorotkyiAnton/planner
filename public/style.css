@@ -1,0 +1,138 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-attachment: fixed;
+    padding: 0%;
+    margin: 0%;
+    background-color: #181818;
+    color: white;
+    font-family: Arial;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_menu {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom_menu {
+    position: relative;
+    top: 250px;
+    justify-self: flex-end;
+}
+
+.block_main, .main_menu {
+    position: absolute; /*position*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: -50%;
+    padding: 40px;
+    width: 80%; /*size*/
+    max-width: 100%;
+    height: 80%;
+    max-height: 100%;
+    background-color: #363940; /*appearance*/
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+    opacity: 97%;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar { /* chrome based */
+    width: 0px; /* ширина scrollbar'a */
+    background: transparent; /* опционально */
+}
+
+.add_notes {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 95%;
+    max-width: 100%;
+    height: 95%;
+    max-height: 100%;
+}
+
+.add_note, .note_text {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.note_text {
+    font-size: 2em;
+    height: 70%;
+    max-height: 70%;
+}
+
+.update {
+    font-size: 2em;
+    height: 30%;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.add_note {
+    height: 30%;
+    max-height: 30%;
+}
+
+.main_menu a {
+    border-bottom: silver solid 1px;
+    padding-top: 5px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+}
+
+.record_area:hover {
+    height: 300px;
+    overflow: scroll;
+}
+
+.record_area {
+    display: flex;
+    justify-items: center;
+    background: #181818;
+    opacity: 90%;
+    margin-bottom: 5px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.records {
+    font-size: 1.5em;
+    overflow-wrap: anywhere;
+}
+
+
+.options > a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.options {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.smallItem {
+    width: 100%;
+    height: 5%;
+    font-size: 30px;
+}

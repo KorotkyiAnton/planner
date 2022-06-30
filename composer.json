@@ -1,0 +1,16 @@
+{
+    "require": {
+        "ramsey/uuid": "^4.3",
+        "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "controllers/",
+            "Models\\": "models/",
+            "Migrations\\": "migrations/",
+            "Views\\": "views/",
+            "Validation\\": "validation/",
+            "Logs\\": "logs/"
+        }
+    }
+}
